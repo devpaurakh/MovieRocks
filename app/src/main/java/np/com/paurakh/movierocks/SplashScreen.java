@@ -2,6 +2,7 @@ package np.com.paurakh.movierocks;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 public class SplashScreen extends AppCompatActivity {
@@ -11,4 +12,5 @@ public class SplashScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
 }

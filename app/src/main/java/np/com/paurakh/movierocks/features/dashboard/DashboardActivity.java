@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import np.com.paurakh.movierocks.R;
+
 public class DashboardActivity extends AppCompatActivity {
 
     @Override
