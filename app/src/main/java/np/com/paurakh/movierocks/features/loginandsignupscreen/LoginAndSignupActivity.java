@@ -20,5 +20,7 @@ public class LoginAndSignupActivity extends AppCompatActivity {
 
         loginOrSignUpTab = findViewById(R.id.tlTabLayout_for_login_signup);
         loginOrSignUpViewPager = findViewById(R.id.vpLoginViewPager);
+
+
     }
 }
