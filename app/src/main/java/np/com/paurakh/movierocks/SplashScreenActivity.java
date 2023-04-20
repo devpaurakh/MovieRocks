@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.os.Handler;
 
 import np.com.paurakh.movierocks.features.dashboard.DashboardActivity;
+import np.com.paurakh.movierocks.features.onboarding.OnBoardingActivity;
 
 @SuppressLint("CustomSplashScreen")
 public class SplashScreenActivity extends AppCompatActivity {
@@ -18,7 +19,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         new Handler().postDelayed(() -> {
-            startActivity(new Intent(SplashScreenActivity.this, DashboardActivity.class));
+            startActivity(new Intent(SplashScreenActivity.this, OnBoardingActivity.class));
             finish();
         },2000);
 

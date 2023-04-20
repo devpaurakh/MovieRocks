@@ -3,4 +3,16 @@
     <string name="this_is_the_main_logo_the_this_app">This is the main logo the this app</string>
     <string name="copyright">MOVIE ROCKS</string>
     <string name="entertainment">All the Right are reserved by PH7 Entertainment</string>
+    <string name="onBoardingPhotos">onBoardingPhotos</string>
+    <string name="titleOne">Welcome to the Movie Rock!</string>
+    <string name="titleTwo">Discover New Movies with Us</string>
+    <string name="titleThree">A Movie Lover\'s Dream App</string>
+    <string name="titleFour"> Never Miss a Movie Again</string>
+    <string name="descOne">A quick guide to help you get started with our app and find your favorite movies.</string>
+    <string name="descTwo">Join us as we take you on a journey to explore new and exciting movies from around the world.</string>
+    <string name="descThree">Our app is designed to make it easy for you to browse and discover the latest movies, actors, and directors.
+</string>
+    <string name="descFour">Stay up to date with the latest releases and never miss a movie again with our easy-to-use movie database app.</string>
+    <string name="nextButton">This the image of the button to next</string>
+    <string name="first_photo">this is the first page of the onboarding app</string>
 </resources>
