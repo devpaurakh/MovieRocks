@@ -15,4 +15,6 @@
     <string name="descFour">Stay up to date with the latest releases and never miss a movie again with our easy-to-use movie database app.</string>
     <string name="nextButton">This the image of the button to next</string>
     <string name="first_photo">this is the first page of the onboarding app</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
