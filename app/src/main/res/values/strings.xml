@@ -18,4 +18,12 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="loginFrag">LoginFrag</string>
     <string name="SignUpFrag">SignUpFrag</string>
+    <string name="this_is_the_logo">This is the Logo</string>
+    <string name="log_in_now">Log In Now</string>
+    <string name="please_login_to_continue_using_our_app">Please login to continue using our app</string>
+    <string name="email">Email</string>
+    <string name="forget_password">Forget Password?</string>
+    <string name="password">Password</string>
+    <string name="log_in">Log In</string>
+    <string name="username">Username</string>
 </resources>
