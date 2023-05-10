@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1073953662950",
+    "project_id": "movie-rocks",
+    "storage_bucket": "movie-rocks.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1073953662950:android:3a952c5dc173731b7d5827",
+        "android_client_info": {
+          "package_name": "np.com.paurakh.movierocks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1073953662950-fcu0tvbm4ijckcs3to875qejlbls8hk8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChGit0wjHcrS4a6UyJGUWoKETZON1ZAWQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1073953662950-fcu0tvbm4ijckcs3to875qejlbls8hk8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
