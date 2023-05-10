@@ -31,7 +31,6 @@ public class ViewPagerLoginOrSignUpAdapter extends FragmentPagerAdapter {
     public int getCount() {
         return 2;//numbers of tabs for login and signup
     }
-
     @Nullable
     @Override
     public CharSequence getPageTitle(int position) {

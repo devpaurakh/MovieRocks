@@ -53,6 +53,7 @@
                 android:orientation="vertical">
 
                 <EditText
+                    android:id="@+id/etUserUserName"
                     android:layout_width="321dp"
                     android:layout_height="66dp"
                     android:layout_marginTop="30dp"
@@ -69,6 +70,7 @@
                     tools:ignore="LabelFor"/>
 
                 <EditText
+                    android:id="@+id/etUserPassword"
                     android:layout_width="321dp"
                     android:layout_height="66dp"
                     android:layout_marginTop="30dp"
@@ -93,6 +95,7 @@
                     android:textColor="@color/lightBlue"
                     android:textSize="14sp" />
                 <Button
+                    android:id="@+id/btnLogin"
                     android:layout_width="278dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
