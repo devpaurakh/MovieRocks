@@ -38,7 +38,6 @@ public class OnBoardingActivity extends AppCompatActivity {
 
         dotsLayout = findViewById(R.id.llDotsLayout);
 
-
         saveState = new SaveState(this, "done");
 
         if (saveState.getState() == 1) {

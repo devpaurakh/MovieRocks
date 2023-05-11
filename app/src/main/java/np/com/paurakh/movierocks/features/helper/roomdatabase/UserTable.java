@@ -3,8 +3,10 @@ package np.com.paurakh.movierocks.features.helper.roomdatabase;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
+import np.com.paurakh.movierocks.features.loginandsignupscreen.fragments.halper.LoginAndSignupContract;
+
 @Entity(tableName = "userTable")
-public class UserTable {
+public class UserTable implements LoginAndSignupContract {
     @PrimaryKey(autoGenerate = true)
     private int id;
     private String userName;
@@ -59,4 +61,6 @@ public class UserTable {
     public void setPassword(String password) {
         this.password = password;
     }
+
+
 }
