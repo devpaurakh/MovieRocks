@@ -4,7 +4,9 @@ import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
 import np.com.paurakh.movierocks.features.loginandsignupscreen.fragments.halper.LoginAndSignupContract;
-
+/**
+ * This class represents the UserTable entity in the local Room database.
+ */
 @Entity(tableName = "userTable")
 public class UserTable implements LoginAndSignupContract {
     @PrimaryKey(autoGenerate = true)

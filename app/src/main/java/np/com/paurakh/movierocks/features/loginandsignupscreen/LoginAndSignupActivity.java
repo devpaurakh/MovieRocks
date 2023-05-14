@@ -21,16 +21,6 @@ public class LoginAndSignupActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
 
-
-
-
-
-
-
-
-
-
-
         setContentView(R.layout.activity_login_and_signup);
 
         loginOrSignUpTab = findViewById(R.id.tlTabLayout_for_login_signup);

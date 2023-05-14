@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    tools:context=".features.dashboard.dashboardpages.ProfileFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/lightBlue"
+        android:layout_height="350dp"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:id="@+id/topLinearLayout"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="300dp"
+            tools:ignore="UselessParent">
+            <androidx.cardview.widget.CardView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="5dp"
+                android:layout_marginTop="35dp"
+                android:layout_gravity="center_horizontal"
+                android:foregroundGravity="center_horizontal"
+                app:cardCornerRadius="100dp">
+                <ImageView
+                    android:contentDescription="@string/profile_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/baseline_person_4_24"
+                    />
+
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="23sp"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"
+                android:text="@string/userName"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@id/topLinearLayout"
+            android:layout_marginStart="120dp"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:contentDescription="@string/facebookIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_facebook"/>
+            <ImageView
+                android:contentDescription="@string/whatsApp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/ic_whatsapp"/>
+            <ImageView
+                android:contentDescription="@string/instGram"
+                android:layout_marginStart="5dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_instagram"/>
+            <ImageView
+                android:contentDescription="@string/snapchat"
+                android:layout_marginStart="5dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_snapchat"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:drawablePadding="5dp"
+            android:textSize="20sp"
+            android:text="@string/paurakhsaud123_gmail_com"
+            android:layout_height="wrap_content"
+            app:drawableStartCompat="@drawable/baseline_email_24" />
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="5dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="@string/_9848840209"
+            android:layout_height="wrap_content"
+            app:drawableStartCompat="@drawable/baseline_phone_24" />
+        <Button
+            android:id="@+id/blogOut"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:text="@string/log_out" />
+
+    </LinearLayout>
+</LinearLayout>

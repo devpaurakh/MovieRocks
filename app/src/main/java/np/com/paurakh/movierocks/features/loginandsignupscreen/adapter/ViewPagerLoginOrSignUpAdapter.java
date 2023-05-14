@@ -9,35 +9,36 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import np.com.paurakh.movierocks.features.loginandsignupscreen.fragments.LoginFragment;
 import np.com.paurakh.movierocks.features.loginandsignupscreen.fragments.SignUpFragment;
 
-
 public class ViewPagerLoginOrSignUpAdapter extends FragmentPagerAdapter {
-
 
     public ViewPagerLoginOrSignUpAdapter(@NonNull FragmentManager fm) {
         super(fm);
     }
 
+    // Returns a new fragment instance depending on the tab position
     @NonNull
     @Override
     public Fragment getItem(int position) {
-        if(position == 0){
+        if (position == 0) {
             return new LoginFragment();
         } else {
-            return new SignUpFragment(); // for the position 1 index
+            return new SignUpFragment();
         }
     }
 
+    // Returns the total number of tabs to display
     @Override
     public int getCount() {
-        return 2;//numbers of tabs for login and signup
+        return 2;
     }
+
+    // Returns the title of each tab based on the position
     @Nullable
     @Override
     public CharSequence getPageTitle(int position) {
-        if(position == 0){
+        if (position == 0) {
             return "Log-In";
-        }
-        else {
+        } else {
             return "Sign-Up";
         }
     }

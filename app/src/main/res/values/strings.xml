@@ -31,4 +31,24 @@
     <string name="phone_number">Phone Number</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="sign_up">Sign-Up</string>
+    <string name="home">Home</string>
+    <string name="up_coming">Up-Coming</string>
+    <string name="profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="home_frag">home Fragment</string>
+    <string name="profile_frag">Profile Fragment</string>
+    <string name="upcoming_frag">Upcoming Fragment</string>
+    <string name="this_holds_movie_poster">This holds movie poster</string>
+    <string name="popular_movies">Popular movies</string>
+    <string name="up_coming_movies">Up Coming Movies</string>
+    <string name="userName">Paurakh Saud</string>
+    <string name="profile_image">profile Image</string>
+    <string name="facebookIcon">facebookIcon</string>
+    <string name="whatsApp">whatsapp</string>
+    <string name="instGram">instgram</string>
+    <string name="snapchat">snapChat</string>
+    <string name="paurakhsaud123_gmail_com">paurakhsaud123@gmail.com</string>
+    <string name="_9848840209">9848840209</string>
+    <string name="log_out">Log Out</string>
+
 </resources>
