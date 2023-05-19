@@ -41,7 +41,7 @@ public class ProfileFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view =  inflater.inflate(R.layout.fragment_profile, container, false);
+        View view = inflater.inflate(R.layout.fragment_profile, container, false);
         return view;
     }
 
@@ -51,7 +51,7 @@ public class ProfileFragment extends Fragment {
 
         logoutBtn = view.findViewById(R.id.blogOut);
         logoutBtn.setOnClickListener(v -> {
-            sharedPreferences = requireContext().getSharedPreferences("myPrefs",Context.MODE_PRIVATE);
+            sharedPreferences = requireContext().getSharedPreferences("myPrefs", Context.MODE_PRIVATE);
             // Remove the session token
             sharedPreferences.edit().remove("session_token")
                     .remove("your_session_token_here").apply();            // Redirect the user to the login screen

@@ -8,11 +8,12 @@ import np.com.paurakh.movierocks.features.dashboard.model.Movies;
 public interface MovieListContract {
 
     // Interface for the Model layer of the feature
-    interface Model{
+    interface Model {
 
         // Interface for callback to be implemented by the presenter
-        interface onFinishListener{
+        interface onFinishListener {
             void onFinished(List<Movies> moviesList); // Called when movie list is successfully fetched from server
+
             void onFailure(Throwable t); // Called when there is an error while fetching movie list
         }
 
@@ -24,7 +25,7 @@ public interface MovieListContract {
     }
 
     // Interface for the View layer of the feature
-    interface View{
+    interface View {
 
         // Method to show loading progress
         void showProgress();
@@ -40,7 +41,7 @@ public interface MovieListContract {
     }
 
     // Interface for the Presenter layer of the feature
-    interface Presenter{
+    interface Presenter {
 
         // Method to destroy the presenter and free up resources
         void onDestroy();

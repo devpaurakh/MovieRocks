@@ -11,7 +11,8 @@ public class ApiClint {
 
     //public static final String BASE_URL ="http://10.0.2.2:80";
   // Define the base URL for the API
-  public static final String BASE_URL ="http://192.168.1.68";
+  //public static final String BASE_URL ="http://192.168.1.68";
+    public static final String BASE_URL ="http://100.64.193.18";
 
     // Defining the API key and base URL for movie poster images
     public static final String API_KEY = "7dc42d542480c8947295b0898e3c71da";

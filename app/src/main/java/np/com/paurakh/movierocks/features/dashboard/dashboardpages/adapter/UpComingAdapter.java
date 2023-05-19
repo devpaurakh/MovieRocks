@@ -20,7 +20,7 @@ import np.com.paurakh.movierocks.features.dashboard.model.Movies;
 import np.com.paurakh.movierocks.features.dashboard.network.ApiClint;
 
 public class UpComingAdapter extends RecyclerView.Adapter<UpComingAdapter.ViewHolder> {
-    private  final List<Movies> moviesList;
+    private final List<Movies> moviesList;
     private final Context CONTEXT;
 
     public UpComingAdapter(List<Movies> moviesList, Context CONTEXT) {
@@ -31,7 +31,7 @@ public class UpComingAdapter extends RecyclerView.Adapter<UpComingAdapter.ViewHo
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(CONTEXT).inflate(R.layout.row_item_up_coming_movie_list,parent,false);
+        View view = LayoutInflater.from(CONTEXT).inflate(R.layout.row_item_up_coming_movie_list, parent, false);
         return new ViewHolder(view);
     }
 
@@ -43,7 +43,7 @@ public class UpComingAdapter extends RecyclerView.Adapter<UpComingAdapter.ViewHo
         holder.releaseDate.setText(moviesList.get(position).getReleaseDate());
         holder.movieTitle.setText(moviesList.get(position).getTitle());
         holder.overView.setText(moviesList.get(position).getOverview());
-        Glide.with(CONTEXT).load(ApiClint.IMAGE_BASE_URL+ moviesList.get(position).getPosterPath()).into(holder.moviePoster);
+        Glide.with(CONTEXT).load(ApiClint.IMAGE_BASE_URL + moviesList.get(position).getPosterPath()).into(holder.moviePoster);
 
     }
 
@@ -55,7 +55,8 @@ public class UpComingAdapter extends RecyclerView.Adapter<UpComingAdapter.ViewHo
     public static class ViewHolder extends RecyclerView.ViewHolder {
 
         ImageView moviePoster;
-        TextView rate,releaseDate,movieTitle,overView;
+        TextView rate, releaseDate, movieTitle, overView;
+
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             moviePoster = itemView.findViewById(R.id.ivMoviePoster);

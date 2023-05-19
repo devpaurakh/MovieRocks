@@ -42,11 +42,12 @@ public class UpcomingFragment extends Fragment implements MovieListContract.View
         super.onAttach(context);
         this.context = context;
     }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view =  inflater.inflate(R.layout.fragment_upcoming, container, false);
+        View view = inflater.inflate(R.layout.fragment_upcoming, container, false);
         return view;
     }
 
@@ -54,7 +55,7 @@ public class UpcomingFragment extends Fragment implements MovieListContract.View
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         movieRecyclerView = view.findViewById(R.id.rvUpComingMovieListing);
-        progressBar=view.findViewById(R.id.pbUpComingMoviesProgressing);
+        progressBar = view.findViewById(R.id.pbUpComingMoviesProgressing);
         moviesList = new ArrayList<>();
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(context);
         movieRecyclerView.setLayoutManager(linearLayoutManager);
@@ -63,6 +64,7 @@ public class UpcomingFragment extends Fragment implements MovieListContract.View
         UpComingPresenter moviePresenter = new UpComingPresenter(this);
         moviePresenter.requestDataFromServer();
     }
+
     @Override
     public void showProgress() {
         progressBar.setVisibility(View.VISIBLE);
@@ -93,8 +95,8 @@ public class UpcomingFragment extends Fragment implements MovieListContract.View
     @Override
     public void onResponseFailure(Throwable throwable) {
 
-        Log.e("error",throwable.getMessage());
-        Toast.makeText(context,"error",Toast.LENGTH_SHORT).show();
+        Log.e("error", throwable.getMessage());
+        Toast.makeText(context, "error", Toast.LENGTH_SHORT).show();
 
     }
 }

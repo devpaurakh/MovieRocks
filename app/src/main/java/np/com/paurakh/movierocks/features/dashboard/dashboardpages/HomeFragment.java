@@ -1,20 +1,25 @@
 package np.com.paurakh.movierocks.features.dashboard.dashboardpages;
+
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Bundle;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ProgressBar;
 import android.widget.Toast;
+
 import java.util.ArrayList;
 import java.util.List;
+
 import np.com.paurakh.movierocks.R;
 import np.com.paurakh.movierocks.features.dashboard.contract.MovieListContract;
 import np.com.paurakh.movierocks.features.dashboard.dashboardpages.adapter.MovieAdapter;
@@ -29,10 +34,10 @@ This class represents a fragment of the home screen that displays a list of movi
 public class HomeFragment extends Fragment implements MovieListContract.View {
 
     /*
-    * The class has several member variables, including a MoviePresenter object,
-    *  a RecyclerView, a list of Movies,a MovieAdapter,
-    * a LinearLayoutManager, a ProgressBar, a page number and a Context object.
-    * */
+     * The class has several member variables, including a MoviePresenter object,
+     *  a RecyclerView, a list of Movies,a MovieAdapter,
+     * a LinearLayoutManager, a ProgressBar, a page number and a Context object.
+     * */
     private MoviePresenter moviePresenter;
     private RecyclerView movieRecyclerView;
     private List<Movies> moviesList;
@@ -43,7 +48,7 @@ public class HomeFragment extends Fragment implements MovieListContract.View {
     private Context context;
 
     /*
-    * In the onAttach method, the Context is initialized when the fragment is attached to the activity.*/
+     * In the onAttach method, the Context is initialized when the fragment is attached to the activity.*/
     @Override
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
@@ -54,7 +59,7 @@ public class HomeFragment extends Fragment implements MovieListContract.View {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view =  inflater.inflate(R.layout.fragment_home, container, false);
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
         return view;
     }
 
@@ -67,7 +72,7 @@ public class HomeFragment extends Fragment implements MovieListContract.View {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         movieRecyclerView = view.findViewById(R.id.rvMovieListing);
-        progressBar=view.findViewById(R.id.pbProgressing);
+        progressBar = view.findViewById(R.id.pbProgressing);
         moviesList = new ArrayList<>();
         linearLayoutManager = new LinearLayoutManager(context);
         movieRecyclerView.setLayoutManager(linearLayoutManager);
@@ -101,7 +106,7 @@ public class HomeFragment extends Fragment implements MovieListContract.View {
 
     @Override
     public void onResponseFailure(Throwable throwable) {
-        Log.e("error",throwable.getMessage());
-        Toast.makeText(context,"error",Toast.LENGTH_SHORT).show();
+        Log.e("error", throwable.getMessage());
+        Toast.makeText(context, "error", Toast.LENGTH_SHORT).show();
     }
 }
